@@ -28,9 +28,9 @@ NEXT_PUBLIC_LINKEDIN_PARTNER_ID=1234
 
 Or declare this variable as a [Vercel environment variable](https://vercel.com/docs/concepts/projects/environment-variables) or a [Netlify environment variable](https://docs.netlify.com/environment-variables/get-started/).
 
-Add the `LinkedInInsightTag` component in your `pages/_app.jsx` or `pages/_app.tsx` file:
+Add the `LinkedInInsightTag` component to your `pages/_app.jsx` or `pages/_app.tsx` file:
 
-```
+```js
 // pages/_app.jsx or pages/_app.tsx
 import { LinkedInInsightTag } from 'nextjs-linkedin-insight-tag'
 
