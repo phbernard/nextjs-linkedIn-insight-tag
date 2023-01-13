@@ -5,5 +5,13 @@
   "main": "index.js",
   "repository": "git@github.com:phbernard/nextjs-linkedIn-insight-tag.git",
   "author": "Philippe Bernard <philippe.bernard@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "peerDependencies": {
+    "next": ">=11.0.0",
+    "react": ">=17.0.0"
+  },
+  "devDependencies": {
+    "next": "^13.1.2",
+    "react": "^18.2.0"
+  }
 }
