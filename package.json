@@ -1,0 +1,9 @@
+{
+  "name": "nextjs-linkedIn-insight-tag",
+  "version": "0.0.1",
+  "description": "Easily add a LinkedIn Insight Tag to a NextJS app",
+  "main": "index.js",
+  "repository": "git@github.com:phbernard/nextjs-linkedIn-insight-tag.git",
+  "author": "Philippe Bernard <philippe.bernard@gmail.com>",
+  "license": "MIT"
+}
