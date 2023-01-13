@@ -1,0 +1,1 @@
+export { LinkedInInsightTag } from './LinkedInInsighTag';
