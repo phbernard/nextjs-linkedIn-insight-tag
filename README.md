@@ -45,3 +45,35 @@ const App = ({ Component, pageProps }) => {
 
 export default App;
 ```
+
+## Track events
+
+If you have defined conversions in your LinkedIn Ad campaign, you need to track events:
+
+<img src="doc/track.png" />
+
+Use `linkedInTrack` in a `useEffect` hook:
+
+```js
+// pages/some-page.jsx or pages/some-page.tsx
+
+import { linkedInTrack } from 'nextjs-linkedin-insight-tag'
+
+useEffect(() => {
+  const conversionId = 1234;
+  linkedInTrack(conversionId);
+});
+```
+
+Or you may prefer to use `lintrk` directly:
+
+```js
+// pages/some-page.jsx or pages/some-page.tsx
+
+import { lintrk } from 'nextjs-linkedin-insight-tag'
+
+useEffect(() => {
+  const conversionId = 1234;
+  lintrk('track', { conversion_id: conversionId });
+});
+```
