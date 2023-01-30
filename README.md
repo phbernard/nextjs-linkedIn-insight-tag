@@ -52,17 +52,22 @@ If you have defined conversions in your LinkedIn Ad campaign, you need to track 
 
 <img src="doc/track.png" />
 
-Use `linkedInTrack` in a `useEffect` hook:
+Use `linkedInTrack` when an action takes place:
 
 ```js
 // pages/some-page.jsx or pages/some-page.tsx
 
 import { linkedInTrack } from 'nextjs-linkedin-insight-tag'
 
-useEffect(() => {
-  const conversionId = 1234;
-  linkedInTrack(conversionId);
-});
+<Button
+  onClick={() => {
+    const conversionId = 1234;
+    linkedInTrack(conversionId);
+    // Actually do something...
+  }}
+>
+  Click me!
+</Button>
 ```
 
 Or you may prefer to use `lintrk` directly:
@@ -72,10 +77,15 @@ Or you may prefer to use `lintrk` directly:
 
 import { lintrk } from 'nextjs-linkedin-insight-tag'
 
-useEffect(() => {
-  const conversionId = 1234;
-  lintrk('track', { conversion_id: conversionId });
-});
+<Button
+  onClick={() => {
+    const conversionId = 1234;
+    lintrk('track', { conversion_id: conversionId });
+    // Actually do something...
+  }}
+>
+  Click me!
+</Button>
 ```
 
 ## License
