@@ -77,3 +77,7 @@ useEffect(() => {
   lintrk('track', { conversion_id: conversionId });
 });
 ```
+
+## License
+
+[MIT](https://github.com/phbernard/nextjs-linkedIn-insight-tag/blob/main/LICENSE.md)
