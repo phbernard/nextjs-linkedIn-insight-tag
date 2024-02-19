@@ -28,6 +28,8 @@ NEXT_PUBLIC_LINKEDIN_PARTNER_ID=1234
 
 Or declare this variable as a [Vercel environment variable](https://vercel.com/docs/concepts/projects/environment-variables) or a [Netlify environment variable](https://docs.netlify.com/environment-variables/get-started/).
 
+### Page Router
+
 Add the `LinkedInInsightTag` component to your `pages/_app.jsx` or `pages/_app.tsx` file:
 
 ```js
@@ -44,6 +46,27 @@ const App = ({ Component, pageProps }) => {
 };
 
 export default App;
+```
+
+### App Router
+
+Add the `LinkedInInsightTag` component to your global layout (probably `src/app/layout.tsx`), just before the closing `body` tag:
+
+```js
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode
+}) {
+  return (
+    <html>
+      <body>
+        {children}
+        <LinkedInInsightTag />
+      </body>
+    </html>
+  )
+}
 ```
 
 ## Track events
